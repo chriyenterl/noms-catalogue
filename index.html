@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7CC4B6">
+<meta name="description" content="Noms Corporate and Wedding Catalogue — soft cookie gift packs and crunchy jar cookies in Kota Kinabalu. WhatsApp 018-980 3671 for bulk and event orders.">
+<title>Noms Corporate &amp; Wedding Catalogue</title>
+<link rel="icon" href="assets/img/noms-turquoise-wordmark.png">
+<style>
+@font-face{font-family:'Arial Black';src:url('assets/fonts/AriBlk.ttf') format('truetype');font-weight:900;font-display:swap}
+@font-face{font-family:'Proza Libre';src:url('assets/fonts/ProzaLibre-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Proza Libre';src:url('assets/fonts/ProzaLibre-Bold.ttf') format('truetype');font-weight:700;font-display:swap}
+@font-face{font-family:'Nunito Sans';src:url('assets/fonts/NunitoSans-Variable.ttf') format('truetype');font-weight:200 900;font-display:swap}
+
+:root{
+  --t:#7CC4B6; --tl:#DDF0EC; --deep:#234B4F; --choc:#33261F;
+  --brown:#A8672F; --cream:#FFF7E8; --muted:#7A6A5E; --line:#E5D9C8;
+  --white:#fff;
+  --header-h: 8.6rem;
+  --wa: https://wa.me/60189803671;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  font-family:'Nunito Sans',sans-serif;
+  color:var(--choc);
+  background:var(--cream);
+  line-height:1.45;
+  padding-bottom:calc(88px + env(safe-area-inset-bottom, 0px));
+}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+a.wa-link{color:inherit;text-decoration:none}
+a.wa-link:hover,a.wa-link:focus-visible{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--deep);outline-offset:3px}
+
+.wrap{width:min(1080px, calc(100% - 32px));margin-inline:auto}
+section{scroll-margin-top:calc(var(--header-h) + 12px);padding:36px 0}
+.kicker{
+  display:inline-block;font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--deep);background:var(--tl);padding:5px 11px;border-radius:4px;
+}
+.h1{
+  font-family:'Arial Black',sans-serif;font-size:clamp(1.85rem, 5.6vw, 3.1rem);
+  color:var(--deep);letter-spacing:-.5px;line-height:1.05;margin:10px 0 8px;
+}
+.lead{font-size:1.05rem;line-height:1.45;color:var(--muted);max-width:40rem}
+.sec-title{display:flex;align-items:center;gap:10px;margin:0 0 16px;flex-wrap:wrap}
+.sec-title .bar{width:4px;height:16px;background:var(--t);border-radius:2px;flex:none}
+.sec-title h2{font-family:'Arial Black',sans-serif;font-size:clamp(1.2rem, 3vw, 1.55rem);color:var(--deep);margin:0}
+.sec-title .note{
+  margin-left:auto;font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:.8rem;color:var(--muted);
+}
+
+/* Header */
+.site-header{
+  position:sticky;top:0;z-index:40;
+  background:rgba(255,247,232,.94);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.inner-bar{
+  width:min(1080px, calc(100% - 24px));
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:1fr auto;
+  grid-template-areas:"logo wa" "nav nav";
+  align-items:center;gap:6px 12px;
+  padding:10px 0 8px;
+}
+.header-home{grid-area:logo;display:inline-flex;align-items:center}
+.header-logo{height:42px;width:auto}
+.header-wa{
+  grid-area:wa;
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--deep);color:#fff;
+  font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:.78rem;letter-spacing:.04em;
+  padding:8px 12px;border-radius:999px;text-decoration:none;
+}
+.header-wa svg{width:16px;height:16px;fill:currentColor}
+.header-wa .num{font-family:'Arial Black',sans-serif;letter-spacing:0;font-size:.85rem}
+.nav{
+  grid-area:nav;
+  display:flex;gap:6px;
+  overflow-x:auto; -webkit-overflow-scrolling:touch;
+  padding:2px 0 4px;
+  scrollbar-width:none;
+}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  flex:none;
+  font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--deep);text-decoration:none;
+  padding:7px 12px;border-radius:999px;
+  background:transparent;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--tl)}
+
+/* Hero */
+.hero{
+  background:var(--t);
+  padding:28px 0 36px;
+  position:relative;overflow:hidden;
+}
+.hero .wrap{display:grid;gap:18px;align-items:center}
+.hero .kicker{background:#fff;color:var(--deep)}
+.hero h1{color:#fff}
+.hero .lead{
+  color:var(--deep);font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:1.02rem;max-width:34rem;
+}
+.hero-copy{position:relative;z-index:1;padding-right:86px}
+.hero-mascot{
+  position:absolute;right:-8px;bottom:-18px;width:132px;z-index:0;
+  pointer-events:none;
+}
+.btn-wa{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  margin-top:16px;background:var(--deep);color:#fff;
+  font-family:'Arial Black',sans-serif;font-size:1.05rem;
+  padding:12px 18px;border-radius:12px;text-decoration:none;
+  box-shadow:0 4px 0 #1a3538;
+}
+.btn-wa svg{width:18px;height:18px;fill:currentColor}
+.btn-wa:hover{filter:brightness(1.08)}
+
+/* How / outlets */
+.how-row{display:grid;gap:10px}
+.how{
+  background:var(--white);border-radius:12px;padding:14px 16px;
+  border-top:3px solid var(--t);box-shadow:0 2px 0 var(--line);
+}
+.how .n{font-family:'Arial Black',sans-serif;font-size:.85rem;color:var(--t)}
+.how .t{font-family:'Arial Black',sans-serif;font-size:1.15rem;color:var(--deep);margin-top:2px}
+.how .d{font-size:.95rem;color:var(--muted);margin-top:4px}
+.meta-row{display:grid;gap:10px;margin-top:18px}
+.meta{background:var(--white);border-radius:12px;padding:14px 16px;box-shadow:0 2px 0 var(--line)}
+.meta .lab{
+  font-family:'Proza Libre',sans-serif;font-weight:700;font-size:.75rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--brown);
+}
+.meta .val{font-size:1rem;line-height:1.4;color:var(--deep);margin-top:4px}
+.meta .wa{
+  font-family:'Arial Black',sans-serif;font-size:1.55rem;color:var(--deep);margin-top:4px;display:inline-block;
+}
+
+/* Photos */
+.photo{
+  width:100%;aspect-ratio:4/3;object-fit:cover;
+  border-radius:14px;background:#fff;
+  box-shadow:0 6px 16px rgba(35,75,79,.12);
+}
+.cap{
+  margin-top:8px;font-family:'Proza Libre',sans-serif;font-weight:700;
+  font-size:.88rem;line-height:1.3;color:var(--deep);text-align:center;
+}
+.cap span{display:block;font-family:'Nunito Sans',sans-serif;font-weight:600;font-size:.8rem;color:var(--muted);margin-top:2px}
+.pkg-grid{display:grid;gap:16px}
+
+/* Flavour / price cards */
+.price-row,.moq-cols,.tiers-grid{display:grid;gap:10px}
+.pcard,.moq-card,.size-card{
+  background:var(--white);border-radius:14px;padding:14px 16px;box-shadow:0 2px 0 var(--line);
+}
+.pcard.fav{border-left:5px solid var(--t)}
+.pcard.prem{border-left:5px solid var(--brown)}
+.pcard .lab{
+  font-family:'Proza Libre',sans-serif;font-weight:700;font-size:.75rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+}
+.flavours{margin-top:10px;display:flex;flex-direction:column;gap:6px}
+.flav{font-size:1rem;color:var(--choc);background:var(--cream);border-radius:8px;padding:8px 10px}
+.sig{
+  display:inline-block;margin-left:6px;font-size:.65rem;
+  font-family:'Proza Libre',sans-serif;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;
+  color:var(--deep);background:var(--tl);padding:2px 6px;border-radius:4px;vertical-align:middle;
+}
+.includes{
+  margin:14px 0 0;font-size:1rem;line-height:1.35;color:var(--deep);
+  padding:12px 14px;background:var(--tl);border-radius:10px;
+}
+.moq-card h3,.bulk-block h3,.size-card .sz{
+  font-family:'Arial Black',sans-serif;font-size:1.15rem;color:var(--deep);margin-bottom:6px;
+}
+.bulk-block{margin-top:22px}
+.bulk-block .names{font-size:.95rem;color:var(--muted);margin:-2px 0 10px}
+.size-card .sz small{display:block;font-family:'Nunito Sans',sans-serif;font-weight:600;font-size:.8rem;color:var(--muted);margin-top:2px}
+.tier{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:8px 0;border-top:1px solid var(--line);font-size:1.02rem;
+}
+.tier:first-of-type{border-top:none;padding-top:0}
+.tier .rm{font-family:'Arial Black',sans-serif;font-size:1.2rem;color:var(--brown)}
+
+/* Partners */
+.partner-grid{display:grid;gap:12px}
+.partner{
+  background:var(--white);border-radius:14px;padding:14px;box-shadow:0 2px 0 var(--line);
+  display:flex;flex-direction:column;
+}
+.partner .plab{
+  font-family:'Proza Libre',sans-serif;font-weight:700;font-size:.75rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--brown);
+}
+.partner .pname{font-family:'Arial Black',sans-serif;font-size:1.25rem;color:var(--deep);margin-top:4px}
+.partner .pdesc{font-size:.95rem;line-height:1.4;color:var(--muted);margin:6px 0 12px}
+.photo-add{
+  width:100%;aspect-ratio:4/3;border:1.5px dashed #C9B8A4;border-radius:12px;
+  background:linear-gradient(180deg,#FFFBF3 0%,#F3E8D6 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  color:var(--muted);text-align:center;padding:16px;
+}
+.photo-add .ph{font-family:'Arial Black',sans-serif;font-size:1.05rem;color:var(--deep)}
+.photo-add .ps{font-size:.82rem;margin-top:4px}
+
+/* Order / CTA */
+.cta{
+  background:var(--deep);border-radius:18px;padding:22px 20px;
+  color:#fff;display:grid;gap:16px;align-items:center;
+}
+.cta .lab{
+  font-family:'Proza Libre',sans-serif;font-weight:700;font-size:.75rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--t);
+}
+.cta .h{font-family:'Arial Black',sans-serif;font-size:clamp(1.3rem, 4vw, 1.7rem);line-height:1.15;margin-top:4px}
+.cta p{font-size:1rem;line-height:1.4;margin-top:8px;opacity:.92}
+.cta .wa{
+  font-family:'Arial Black',sans-serif;font-size:clamp(1.5rem, 5vw, 1.9rem);
+  margin-top:10px;display:inline-block;color:#fff;
+}
+.cta .mascot{width:120px;margin:0 auto}
+.cta .btn-wa{background:#fff;color:var(--deep);box-shadow:none;margin-top:14px}
+.cta .btn-wa:hover{filter:none;background:var(--tl)}
+
+/* Footer */
+.site-footer{background:var(--deep);color:#D6ECE7;padding:28px 0 36px;margin-top:12px}
+.site-footer .wrap{display:grid;gap:14px}
+.site-footer .wm{height:22px;width:auto}
+.site-footer p{font-size:.9rem;line-height:1.45}
+.site-footer .wa{font-family:'Arial Black',sans-serif;font-size:1.15rem;color:#fff;display:inline-block;margin-top:4px}
+
+/* Floating WhatsApp */
+.fab-wa{
+  position:fixed;z-index:50;
+  right:max(16px, env(safe-area-inset-right));
+  bottom:max(16px, env(safe-area-inset-bottom));
+  width:58px;height:58px;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 20px rgba(35,75,79,.28);
+  text-decoration:none;
+}
+.fab-wa svg{width:30px;height:30px;fill:currentColor}
+.fab-wa:hover{filter:brightness(1.06);transform:scale(1.04)}
+.fab-wa:focus-visible{outline-color:#fff}
+.visually-hidden{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
+}
+
+@media (max-width:639px){
+  .nav{flex-wrap:wrap;overflow:visible;row-gap:2px}
+  .hero-copy{padding-right:0}
+  .hero-mascot{top:10px;right:-6px;bottom:auto;width:110px}
+  .hero .btn-wa{width:100%;max-width:100%;white-space:nowrap;justify-content:center}
+}
+@media (min-width:640px){
+  :root{--header-h: 4.75rem}
+  .wrap,.inner-bar{width:min(1080px, calc(100% - 40px))}
+  .inner-bar{
+    grid-template-columns:auto 1fr auto;
+    grid-template-areas:"logo nav wa";
+    gap:12px 18px;padding:10px 0;
+  }
+  .nav{overflow:visible;padding:0;justify-content:center}
+  .hero .wrap{grid-template-columns:1fr auto;padding:20px 0 28px}
+  .hero-copy{padding-right:0}
+  .hero-mascot{position:static;width:200px;bottom:auto;right:auto}
+  .how-row{grid-template-columns:repeat(3,1fr);gap:12px}
+  .meta-row{grid-template-columns:1.3fr 1fr;gap:12px}
+  .price-row,.moq-cols,.tiers-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .pkg-grid{grid-template-columns:repeat(2,1fr);gap:18px}
+  .pkg-grid.equal-3{grid-template-columns:repeat(3,1fr)}
+  .partner-grid{grid-template-columns:repeat(3,1fr);gap:14px}
+  .cta{grid-template-columns:1fr auto;padding:28px 28px}
+  .cta .mascot{margin:0;width:140px}
+  .header-wa .label{display:inline}
+}
+
+@media (min-width:960px){
+  .pkg-grid.lookbook{grid-template-columns:repeat(3,1fr)}
+  .hero{padding:40px 0 48px}
+  section{padding:48px 0}
+}
+
+@media (max-width:639px){
+  .header-wa .label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="inner-bar">
+    <a class="header-home" href="#top" aria-label="Noms home">
+      <img class="header-logo" src="assets/img/noms-logo-turquoise-tagline.png" alt="Noms — One Bite Just Isn't Enough">
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#soft">Soft</a>
+      <a href="#crunchy">Crunchy</a>
+      <a href="#packaging">Packaging</a>
+      <a href="#partners">Partners</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a class="header-wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 21.9 12a10.9 10.9 0 0 0-1.4-8.5zM12 21.2a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9.2 9.2 0 1 1 12 21.2zm5.1-6.9c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.5l.4-.5.1-.2c.1-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3a2.1 2.1 0 0 0-.7 1.6c0 1 .7 2.1.8 2.2s1.4 2.3 3.5 3.1a12 12 0 0 0 1.2.4 2.8 2.8 0 0 0 1.3.1c.4-.1 1.6-.6 1.8-1.3s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+      <span class="label">WhatsApp</span>
+      <span class="num">018-980 3671</span>
+    </a>
+  </div>
+</header>
+
+<div id="top">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="kicker">Corporate &amp; Wedding · Kota Kinabalu</div>
+      <h1 class="h1" id="hero-title">Corporate &amp; Wedding Catalogue</h1>
+      <p class="lead">Soft cookie gift packs and crunchy jar cookies for weddings, corporate gifting and events.</p>
+      <a class="btn-wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 21.9 12a10.9 10.9 0 0 0-1.4-8.5zM12 21.2a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9.2 9.2 0 1 1 12 21.2zm5.1-6.9c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.5l.4-.5.1-.2c.1-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3a2.1 2.1 0 0 0-.7 1.6c0 1 .7 2.1.8 2.2s1.4 2.3 3.5 3.1a12 12 0 0 0 1.2.4 2.8 2.8 0 0 0 1.3.1c.4-.1 1.6-.6 1.8-1.3s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+        WhatsApp <span>018-980 3671</span>
+      </a>
+    </div>
+    <img class="hero-mascot" src="assets/img/m-hug.png" alt="">
+  </div>
+</section>
+</div>
+
+<section aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="sec-title"><span class="bar"></span><h2 id="how-title">How soft gift packs work</h2></div>
+    <div class="how-row">
+      <div class="how">
+        <div class="n">01</div>
+        <div class="t">Pick a soft cookie</div>
+        <div class="d">Classic or Premium flavours</div>
+      </div>
+      <div class="how">
+        <div class="n">02</div>
+        <div class="t">Add a ribbon</div>
+        <div class="d">Ready for gifting and weddings</div>
+      </div>
+      <div class="how">
+        <div class="n">03</div>
+        <div class="t">Custom sticker</div>
+        <div class="d">Your message, logo or couple names</div>
+      </div>
+    </div>
+    <div class="meta-row">
+      <div class="meta">
+        <div class="lab">Outlets</div>
+        <div class="val">Karamunsing · City Mall<br>The Walk Riverson · ITCC kiosk</div>
+      </div>
+      <div class="meta">
+        <div class="lab">Bulk order &amp; events</div>
+        <a class="wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">018-980 3671</a>
+        <div class="val">WhatsApp · Noms customer service</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="soft" aria-labelledby="soft-title">
+  <div class="wrap">
+    <div class="kicker">Soft cookies</div>
+    <h2 class="h1" id="soft-title">Soft — Gift packs &amp; Bulk order</h2>
+    <p class="lead">One soft cookie of choice, finished with ribbon and a custom sticker.</p>
+
+    <div class="sec-title" style="margin-top:22px"><span class="bar"></span><h2>Flavours</h2></div>
+    <div class="price-row">
+      <div class="pcard fav">
+        <div class="lab">Classic</div>
+        <div class="flavours">
+          <div class="flav">Brown Butter Choc Chip <span class="sig">Signature</span></div>
+          <div class="flav">Double Choc</div>
+          <div class="flav">Red Velvet Cream Cheese</div>
+          <div class="flav">Cookies &amp; Cream Cheese</div>
+          <div class="flav">Matcha</div>
+        </div>
+      </div>
+      <div class="pcard prem">
+        <div class="lab">Premium</div>
+        <div class="flavours">
+          <div class="flav">Pistachio Kunafa</div>
+          <div class="flav">Kunafatella</div>
+        </div>
+      </div>
+    </div>
+    <div class="includes"><b>Includes:</b> soft cookie of choice + ribbon + custom sticker</div>
+
+    <div class="sec-title" style="margin-top:28px">
+      <span class="bar"></span>
+      <h2>MOQ · from 21 pieces</h2>
+      <span class="note">Price per cookie · bulk order / events</span>
+    </div>
+    <div class="moq-cols" id="soft-moq-prices">
+      <div class="moq-card" data-tier="classic">
+        <h3>Classic</h3>
+        <div class="tier" data-qty="21-50"><span class="qty">21–50 pcs</span><span class="rm" data-soft-price="classic-21-50">RM9</span></div>
+        <div class="tier" data-qty="51-100"><span class="qty">51–100 pcs</span><span class="rm" data-soft-price="classic-51-100">RM8.50</span></div>
+        <div class="tier" data-qty="101+"><span class="qty">101+ pcs</span><span class="rm" data-soft-price="classic-101">RM8</span></div>
+      </div>
+      <div class="moq-card" data-tier="premium">
+        <h3>Premium</h3>
+        <div class="tier" data-qty="21-50"><span class="qty">21–50 pcs</span><span class="rm" data-soft-price="premium-21-50">RM10</span></div>
+        <div class="tier" data-qty="51-100"><span class="qty">51–100 pcs</span><span class="rm" data-soft-price="premium-51-100">RM9.50</span></div>
+        <div class="tier" data-qty="101+"><span class="qty">101+ pcs</span><span class="rm" data-soft-price="premium-101">RM9</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="crunchy" aria-labelledby="crunchy-title">
+  <div class="wrap">
+    <div class="kicker">Crunchy · Bulk order</div>
+    <h2 class="h1" id="crunchy-title">Crunchy jars — Bulk order</h2>
+    <p class="lead">Event and corporate tiers. MOQs differ by size — not the same as Soft (21 pcs).</p>
+
+    <div class="pkg-grid equal-3" style="margin-top:22px">
+      <figure>
+        <img class="photo" src="assets/img/crunchy-jars.jpg" alt="100g crunchy cookie jars with ribbon">
+        <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/crunchy-custom.jpg" alt="Custom pack window boxes">
+        <figcaption class="cap">Custom Pack<span>200g window boxes</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/crunchy-packets.jpg" alt="Packets with custom note">
+        <figcaption class="cap">Packets with custom note<span>20g · mini cookies + note</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="bulk-block">
+      <h3>Classic</h3>
+      <div class="names">Sea Salt Choco Crunch · Blackout Cocoa Crunch</div>
+      <div class="tiers-grid">
+        <div class="size-card">
+          <div class="sz">100g<small>from 2 jars</small></div>
+          <div class="tier"><span class="qty">2–50</span><span class="rm">RM10</span></div>
+          <div class="tier"><span class="qty">51–100</span><span class="rm">RM9</span></div>
+          <div class="tier"><span class="qty">101+</span><span class="rm">RM8</span></div>
+        </div>
+        <div class="size-card">
+          <div class="sz">200g<small>from 1 jar</small></div>
+          <div class="tier"><span class="qty">1–50</span><span class="rm">RM20</span></div>
+          <div class="tier"><span class="qty">51–100</span><span class="rm">RM19</span></div>
+          <div class="tier"><span class="qty">101+</span><span class="rm">RM17</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bulk-block">
+      <h3>Premium</h3>
+      <div class="names">Macadamia White Chocolate · Cranberry Crunch</div>
+      <div class="tiers-grid">
+        <div class="size-card">
+          <div class="sz">100g<small>from 50 jars</small></div>
+          <div class="tier"><span class="qty">50–100</span><span class="rm">RM12</span></div>
+          <div class="tier"><span class="qty">101+</span><span class="rm">RM11</span></div>
+        </div>
+        <div class="size-card">
+          <div class="sz">200g<small>from 10 jars</small></div>
+          <div class="tier"><span class="qty">10–50</span><span class="rm">RM23</span></div>
+          <div class="tier"><span class="qty">51–100</span><span class="rm">RM22</span></div>
+          <div class="tier"><span class="qty">101+</span><span class="rm">RM20</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="packaging" aria-labelledby="packaging-title">
+  <div class="wrap">
+    <div class="kicker">Lookbook</div>
+    <h2 class="h1" id="packaging-title">Packaging</h2>
+    <p class="lead">Soft gift packs, crunchy jars, window boxes and packets — finished with ribbon and a custom sticker or note.</p>
+    <div class="pkg-grid lookbook" style="margin-top:22px">
+      <figure>
+        <img class="photo" src="assets/img/soft-ribbon.jpg" alt="Soft gift packs with ribbon and custom sticker">
+        <figcaption class="cap">Soft gift pack<span>Ribbon + custom sticker</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/soft-assort.jpg" alt="Soft gift packs with stickered wraps">
+        <figcaption class="cap">Soft gift pack<span>Stickered wraps</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/crunchy-jars.jpg" alt="100g crunchy cookie jars with ribbon">
+        <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/crunchy-custom.jpg" alt="Custom pack 200g window boxes">
+        <figcaption class="cap">Custom Pack<span>200g window boxes</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/crunchy-packets.jpg" alt="Packets with custom note">
+        <figcaption class="cap">Packets with custom note<span>20g · mini cookies + note</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="partners" aria-labelledby="partners-title">
+  <div class="wrap">
+    <div class="kicker">Events · Partners</div>
+    <h2 class="h1" id="partners-title">Collaborating partners</h2>
+    <p class="lead">For events, Noms can be arranged together with drinks, pastries and a dessert table set-up. Details on request.</p>
+
+    <div class="sec-title" style="margin-top:22px"><span class="bar"></span><h2>Add-ons for your event</h2></div>
+    <div class="partner-grid">
+      <article class="partner">
+        <div class="plab">Drinks</div>
+        <div class="pname">ChaJo</div>
+        <p class="pdesc">Drinks for your event. Menu and pricing on request.</p>
+        <div class="photo-add" role="img" aria-label="Photo to add">
+          <div class="ph">Photo to add</div>
+          <div class="ps">ChaJo drinks photo<br>to be supplied</div>
+        </div>
+      </article>
+      <article class="partner">
+        <div class="plab">Pastries</div>
+        <div class="pname">Walnut Bakery</div>
+        <p class="pdesc">Cakes, loaves and pastries for your event. Menu and pricing on request.</p>
+        <img class="photo" src="assets/img/walnut-loaf.jpg" alt="Walnut Bakery loaf">
+      </article>
+      <article class="partner">
+        <div class="plab">Styling</div>
+        <div class="pname">Dessert table set-up</div>
+        <p class="pdesc">Dessert table set-up for your event. Details on request.</p>
+        <div class="photo-add" role="img" aria-label="Photo to add">
+          <div class="ph">Photo to add</div>
+          <div class="ps">Dessert table photo<br>to be supplied</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="order" aria-labelledby="order-title">
+  <div class="wrap">
+    <div class="cta">
+      <div class="copy">
+        <h2 class="h" id="order-title">Interested in an event add-on?</h2>
+        <p>WhatsApp your event date, headcount and which partners you would like included. For cookie bulk orders, send flavours, quantity and your preferred outlet. Custom stickers welcome.</p>
+        <a class="wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">018-980 3671</a>
+        <div>
+          <a class="btn-wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 21.9 12a10.9 10.9 0 0 0-1.4-8.5zM12 21.2a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9.2 9.2 0 1 1 12 21.2zm5.1-6.9c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.5l.4-.5.1-.2c.1-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3a2.1 2.1 0 0 0-.7 1.6c0 1 .7 2.1.8 2.2s1.4 2.3 3.5 3.1a12 12 0 0 0 1.2.4 2.8 2.8 0 0 0 1.3.1c.4-.1 1.6-.6 1.8-1.3s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+            Message us on WhatsApp
+          </a>
+        </div>
+      </div>
+      <img class="mascot" src="assets/img/m-nomnom.png" alt="">
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img class="wm" src="assets/img/noms-white-wordmark.png" alt="Noms">
+    <p>Corporate &amp; wedding orders · Kota Kinabalu<br>
+       Karamunsing · City Mall · The Walk Riverson · ITCC kiosk</p>
+    <p>WhatsApp · Noms customer service<br>
+      <a class="wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">018-980 3671</a>
+    </p>
+  </div>
+</footer>
+
+<a class="fab-wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">
+  <span class="visually-hidden">WhatsApp 018-980 3671</span>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 21.9 12a10.9 10.9 0 0 0-1.4-8.5zM12 21.2a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9.2 9.2 0 1 1 12 21.2zm5.1-6.9c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.5l.4-.5.1-.2c.1-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3a2.1 2.1 0 0 0-.7 1.6c0 1 .7 2.1.8 2.2s1.4 2.3 3.5 3.1a12 12 0 0 0 1.2.4 2.8 2.8 0 0 0 1.3.1c.4-.1 1.6-.6 1.8-1.3s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
+</a>
+
+</body>
+</html>
