@@ -17,7 +17,7 @@
   --t:#7CC4B6; --tl:#DDF0EC; --deep:#234B4F; --choc:#33261F;
   --brown:#A8672F; --cream:#FFF7E8; --muted:#7A6A5E; --line:#E5D9C8;
   --white:#fff;
-  --header-h: 8.6rem;
+  --header-h: 5.6rem;
   --wa: https://wa.me/60189803671;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -265,12 +265,6 @@ section{scroll-margin-top:calc(var(--header-h) + 12px);padding:36px 0}
   overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;
 }
 
-@media (max-width:639px){
-  .nav{flex-wrap:wrap;overflow:visible;row-gap:2px}
-  .hero-copy{padding-right:0}
-  .hero-mascot{top:10px;right:-6px;bottom:auto;width:110px}
-  .hero .btn-wa{width:100%;max-width:100%;white-space:nowrap;justify-content:center}
-}
 @media (min-width:640px){
   :root{--header-h: 4.75rem}
   .wrap,.inner-bar{width:min(1080px, calc(100% - 40px))}
@@ -301,7 +295,64 @@ section{scroll-margin-top:calc(var(--header-h) + 12px);padding:36px 0}
 }
 
 @media (max-width:639px){
+  :root{--header-h:5.6rem}
+  body{font-size:.92rem;line-height:1.42}
+  .wrap{width:min(1080px, calc(100% - 28px))}
+  section{padding:24px 0}
+  .kicker{font-size:.62rem;letter-spacing:.12em;padding:3px 8px}
+  .h1{font-size:1.7rem;letter-spacing:-.4px;line-height:1.12;margin:8px 0 6px}
+  .lead{font-size:.95rem;line-height:1.4}
+  .sec-title{gap:8px;margin:0 0 12px}
+  .sec-title h2{font-size:1.25rem}
+  .sec-title .note{font-size:.75rem}
+  .inner-bar{gap:4px 10px;padding:8px 0 6px}
+  .header-logo{height:36px}
+  .header-wa{gap:5px;font-size:.7rem;padding:5px 9px}
+  .header-wa svg{width:14px;height:14px}
+  .header-wa .num{font-size:.75rem}
   .header-wa .label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+  .sec-title .note{margin-left:0;flex-basis:100%}
+  .nav{flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;padding:0 2px 2px;gap:0}
+  .nav a{font-size:.68rem;letter-spacing:.04em;padding:5px 8px}
+  .hero{padding:18px 0 16px}
+  .hero .wrap{position:relative;gap:8px}
+  .hero-copy{padding-right:0}
+  .hero .lead{font-size:.95rem;padding-right:100px}
+  .hero-mascot{position:absolute;right:-4px;bottom:0;top:auto;width:96px;margin:0}
+  .how-row,.meta-row{gap:8px}
+  .meta-row{margin-top:12px}
+  .how,.meta,.pcard,.moq-card,.size-card,.partner{padding:10px 12px;box-shadow:none;border-radius:10px}
+  .how{border-top-width:2px}
+  .how .n{font-size:.8rem}
+  .how .t{font-size:1.02rem}
+  .how .d{font-size:.9rem;margin-top:2px}
+  .meta .lab,.pcard .lab,.partner .plab,.cta .lab{font-size:.68rem;letter-spacing:.1em}
+  .meta .val{font-size:.92rem}
+  .meta .wa{font-size:1.25rem}
+  .photo{border-radius:10px;box-shadow:0 2px 8px rgba(35,75,79,.08)}
+  .cap{font-size:.82rem;margin-top:6px}
+  .pkg-grid{gap:12px}
+  .flavours{margin-top:8px;gap:5px}
+  .flav{font-size:.92rem;padding:7px 9px;border-radius:6px}
+  .includes{margin-top:10px;font-size:.92rem;padding:10px 12px;border-radius:8px}
+  .moq-card h3,.bulk-block h3,.size-card .sz{font-size:1.05rem;margin-bottom:4px}
+  .bulk-block{margin-top:16px}
+  .bulk-block .names{font-size:.88rem}
+  .tier{padding:6px 0;font-size:.92rem}
+  .tier .rm{font-size:1.05rem;white-space:nowrap}
+  .partner .pname{font-size:1.1rem;margin-top:2px}
+  .partner .pdesc{font-size:.88rem;margin:4px 0 10px}
+  .cta{padding:16px;border-radius:14px;gap:12px}
+  .cta .h{font-size:1.35rem}
+  .cta p{font-size:.92rem;margin-top:6px}
+  .cta .wa{font-size:1.35rem;margin-top:8px}
+  .cta .mascot{width:96px}
+  .cta .btn-wa{margin-top:10px;font-size:.95rem;padding:10px 14px;border-radius:10px}
+  .site-footer{padding:22px 0 28px;margin-top:8px}
+  .site-footer p{font-size:.85rem}
+  .site-footer .wa{font-size:1.05rem}
+  .fab-wa{width:52px;height:52px}
+  .fab-wa svg{width:26px;height:26px}
 }
 
 /* WhatsApp buttons: white text */
@@ -339,10 +390,6 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
       <div class="kicker">Corporate &amp; Wedding · Kota Kinabalu</div>
       <h1 class="h1" id="hero-title">Corporate &amp; Wedding Catalogue</h1>
       <p class="lead">Soft cookie gift packs and crunchy jar cookies for weddings, corporate gifting and events.</p>
-      <a class="btn-wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 21.9 12a10.9 10.9 0 0 0-1.4-8.5zM12 21.2a9.2 9.2 0 0 1-4.7-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9.2 9.2 0 1 1 12 21.2zm5.1-6.9c-.3-.1-1.6-.8-1.9-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.5 7.5 0 0 1-2.2-1.4 8.3 8.3 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.5l.4-.5.1-.2c.1-.1 0-.3 0-.4s-.6-1.5-.8-2-.4-.5-.6-.5h-.5c-.2 0-.4.1-.6.3a2.1 2.1 0 0 0-.7 1.6c0 1 .7 2.1.8 2.2s1.4 2.3 3.5 3.1a12 12 0 0 0 1.2.4 2.8 2.8 0 0 0 1.3.1c.4-.1 1.6-.6 1.8-1.3s.2-1.1.2-1.2-.2-.2-.4-.3z"/></svg>
-        WhatsApp <span>018-980 3671</span>
-      </a>
     </div>
     <img class="hero-mascot" src="assets/img/m-hug.png" alt="">
   </div>
@@ -441,15 +488,15 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 
     <div class="pkg-grid equal-3" style="margin-top:22px">
       <figure>
-        <img class="photo" src="assets/img/crunchy-jars.jpg?v=2" srcset="assets/img/crunchy-jars.jpg?v=2 465w, assets/img/crunchy-jars-2x.jpg?v=2 930w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="465" height="349" alt="100g crunchy cookie jars with ribbon">
+        <img class="photo" src="assets/img/crunchy-jars.jpg?v=3" srcset="assets/img/crunchy-jars.jpg?v=3 465w, assets/img/crunchy-jars-2x.jpg?v=3 930w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="465" height="349" alt="100g crunchy cookie jars with ribbon">
         <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-custom.jpg?v=2" srcset="assets/img/crunchy-custom.jpg?v=2 479w, assets/img/crunchy-custom-2x.jpg?v=2 958w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="479" height="359" alt="Custom pack window boxes">
+        <img class="photo" src="assets/img/crunchy-custom.jpg?v=3" srcset="assets/img/crunchy-custom.jpg?v=3 479w, assets/img/crunchy-custom-2x.jpg?v=3 958w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="479" height="359" alt="Custom pack window boxes">
         <figcaption class="cap">Custom Pack<span>200g window boxes</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-packets.jpg?v=2" srcset="assets/img/crunchy-packets.jpg?v=2 339w, assets/img/crunchy-packets-2x.jpg?v=2 678w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="339" height="254" alt="Packets with custom note">
+        <img class="photo" src="assets/img/crunchy-packets.jpg?v=3" srcset="assets/img/crunchy-packets.jpg?v=3 339w, assets/img/crunchy-packets-2x.jpg?v=3 678w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="339" height="254" alt="Packets with custom note">
         <figcaption class="cap">Packets with custom note<span>20g · mini cookies + note</span></figcaption>
       </figure>
     </div>
@@ -500,23 +547,23 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <p class="lead">Soft gift packs, crunchy jars, window boxes and packets — finished with ribbon and a custom sticker or note.</p>
     <div class="pkg-grid lookbook" style="margin-top:22px">
       <figure>
-        <img class="photo" src="assets/img/soft-ribbon.jpg?v=2" srcset="assets/img/soft-ribbon.jpg?v=2 382w, assets/img/soft-ribbon-2x.jpg?v=2 764w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="382" height="286" alt="Soft gift packs with ribbon and custom sticker">
+        <img class="photo" src="assets/img/soft-ribbon.jpg?v=3" srcset="assets/img/soft-ribbon.jpg?v=3 382w, assets/img/soft-ribbon-2x.jpg?v=3 764w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="382" height="286" alt="Soft gift packs with ribbon and custom sticker">
         <figcaption class="cap">Soft gift pack<span>Ribbon + custom sticker</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/soft-assort.jpg?v=2" srcset="assets/img/soft-assort.jpg?v=2 307w, assets/img/soft-assort-2x.jpg?v=2 614w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="307" height="230" alt="Soft gift packs with stickered wraps">
+        <img class="photo" src="assets/img/soft-assort.jpg?v=3" srcset="assets/img/soft-assort.jpg?v=3 307w, assets/img/soft-assort-2x.jpg?v=3 614w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="307" height="230" alt="Soft gift packs with stickered wraps">
         <figcaption class="cap">Soft gift pack<span>Stickered wraps</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-jars.jpg?v=2" srcset="assets/img/crunchy-jars.jpg?v=2 465w, assets/img/crunchy-jars-2x.jpg?v=2 930w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="465" height="349" alt="100g crunchy cookie jars with ribbon">
+        <img class="photo" src="assets/img/crunchy-jars.jpg?v=3" srcset="assets/img/crunchy-jars.jpg?v=3 465w, assets/img/crunchy-jars-2x.jpg?v=3 930w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="465" height="349" alt="100g crunchy cookie jars with ribbon">
         <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-custom.jpg?v=2" srcset="assets/img/crunchy-custom.jpg?v=2 479w, assets/img/crunchy-custom-2x.jpg?v=2 958w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="479" height="359" alt="Custom pack 200g window boxes">
+        <img class="photo" src="assets/img/crunchy-custom.jpg?v=3" srcset="assets/img/crunchy-custom.jpg?v=3 479w, assets/img/crunchy-custom-2x.jpg?v=3 958w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="479" height="359" alt="Custom pack 200g window boxes">
         <figcaption class="cap">Custom Pack<span>200g window boxes</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-packets.jpg?v=2" srcset="assets/img/crunchy-packets.jpg?v=2 339w, assets/img/crunchy-packets-2x.jpg?v=2 678w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="339" height="254" alt="Packets with custom note">
+        <img class="photo" src="assets/img/crunchy-packets.jpg?v=3" srcset="assets/img/crunchy-packets.jpg?v=3 339w, assets/img/crunchy-packets-2x.jpg?v=3 678w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="339" height="254" alt="Packets with custom note">
         <figcaption class="cap">Packets with custom note<span>20g · mini cookies + note</span></figcaption>
       </figure>
     </div>
@@ -544,7 +591,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
         <div class="plab">Pastries</div>
         <div class="pname">Walnut Bakery</div>
         <p class="pdesc">Cakes, loaves and pastries for your event. Menu and pricing on request.</p>
-        <img class="photo" src="assets/img/walnut-loaf.jpg?v=2" srcset="assets/img/walnut-loaf.jpg?v=2 960w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="960" height="720" alt="Walnut Bakery loaf">
+        <img class="photo" src="assets/img/walnut-loaf.jpg?v=3" srcset="assets/img/walnut-loaf.jpg?v=3 960w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="960" height="720" alt="Walnut Bakery loaf">
       </article>
       <article class="partner">
         <div class="plab">Styling</div>
