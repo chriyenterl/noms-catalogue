@@ -244,9 +244,10 @@ section{scroll-margin-top:calc(var(--header-h) + 12px);padding:36px 0}
 /* Footer */
 .site-footer{background:var(--deep);color:#D6ECE7;padding:28px 0 36px;margin-top:12px}
 .site-footer .wrap{display:grid;gap:14px}
-.site-footer .wm{height:22px;width:auto}
+.site-footer .wm{height:44px;width:auto}
 .site-footer p{font-size:.9rem;line-height:1.45}
-.site-footer .wa{font-family:'Arial Black',sans-serif;font-size:1.15rem;color:#fff;display:inline-block;margin-top:4px}
+.site-footer .wa{font-family:'Arial Black',sans-serif;font-size:1.15rem;color:#fff;display:inline-block;margin-top:4px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.site-footer .wa::after{content:" ↗";font-size:.85em}
 
 /* Floating WhatsApp */
 .fab-wa{
@@ -611,8 +612,8 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 
 <footer class="site-footer">
   <div class="wrap">
-    <img class="wm" src="assets/img/noms-white-wordmark.png" alt="Noms">
-    <p>Corporate &amp; wedding orders · Kota Kinabalu<br>
+    <img class="wm" src="assets/img/noms-logo-white-tagline.png?v=1" alt="Noms">
+    <p>Corporate Giftings · Weddings · Events · Parties<br>
        Karamunsing · City Mall · The Walk Riverson · ITCC kiosk</p>
     <p>WhatsApp · Noms customer service<br>
       <a class="wa wa-link" href="https://wa.me/60189803671?text=Hi%20Noms%2C%20I%27d%20like%20to%20ask%20about%20a%20bulk%2Fevent%20order">018-980 3671</a>
