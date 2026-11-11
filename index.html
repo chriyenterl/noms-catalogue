@@ -313,7 +313,7 @@ section{scroll-margin-top:calc(var(--header-h) + 12px);padding:36px 0}
   .header-wa .num{font-size:.72rem}
   .header-wa .label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
   .sec-title .note{margin-left:0;flex-basis:100%}
-  .nav{display:grid;grid-template-columns:repeat(5,auto);justify-content:center;overflow:visible;padding:4px 0 3px;gap:0 6px;border-top:1px solid var(--line)}
+  .nav{display:grid;grid-template-columns:repeat(4,auto);justify-content:center;overflow:visible;padding:4px 0 3px;gap:0 6px;border-top:1px solid var(--line)}
   .nav a{font-size:.68rem;letter-spacing:.03em;padding:5px 2px;text-align:center}
   .hero{padding:18px 0 16px}
   .hero .wrap{position:relative;gap:8px;min-height:116px;align-content:center}
@@ -367,6 +367,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 .nav a::after{content:"";position:absolute;left:22%;right:22%;bottom:1px;height:2px;border-radius:2px;background:var(--t);transform:scaleX(0);transition:transform .2s ease}
 .nav a.active::after{transform:scaleX(1)}
 .nav a.active{color:var(--deep)}
+.lead.one-row{white-space:nowrap;max-width:none;font-size:min(1.05rem,3.1vw)}
 </style>
 </head>
 <body>
@@ -379,7 +380,6 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <nav class="nav" aria-label="Sections">
       <a href="#soft">Soft</a>
       <a href="#crunchy">Crunchy</a>
-      <a href="#packaging">Packaging</a>
       <a href="#partners">Partners</a>
       <a href="#order">Order</a>
     </nav>
@@ -436,7 +436,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
   <div class="wrap">
     <div class="kicker">Soft cookies</div>
     <h2 class="h1" id="soft-title">Soft — Gift packs &amp; Bulk order</h2>
-    <p class="lead">Soft cookie of choice, finished with ribbon and a custom sticker.</p>
+    <p class="lead one-row">Soft cookie of choice, finished with ribbon and a custom sticker.</p>
 
     <div class="sec-title" style="margin-top:22px"><span class="bar"></span><h2>Flavours</h2></div>
     <div class="price-row">
@@ -484,7 +484,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 
 <section id="crunchy" aria-labelledby="crunchy-title">
   <div class="wrap">
-    <div class="kicker">Crunchy · Retail &amp; bulk</div>
+    <div class="kicker">Crunchy Cookies</div>
     <h2 class="h1" id="crunchy-title">Crunchy — Retail &amp; bulk</h2>
     <p class="lead">Event and corporate gifting tiers. MOQs differ by weight.</p>
 
@@ -563,35 +563,6 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
           <div class="tier"><span class="qty">101+</span><span class="rm">RM20</span></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="packaging" aria-labelledby="packaging-title">
-  <div class="wrap">
-    <div class="kicker">Lookbook</div>
-    <h2 class="h1" id="packaging-title">Packaging</h2>
-    <div class="pkg-grid lookbook" style="margin-top:22px">
-      <figure>
-        <img class="photo" src="assets/img/soft-ribbon.jpg?v=7" srcset="assets/img/soft-ribbon.jpg?v=7 382w, assets/img/soft-ribbon-2x.jpg?v=7 764w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="382" height="286" alt="Soft gift packs with ribbon and custom sticker">
-        <figcaption class="cap">Soft gift pack<span>Ribbon + custom sticker</span></figcaption>
-      </figure>
-      <figure>
-        <img class="photo" src="assets/img/soft-assort.jpg?v=7" srcset="assets/img/soft-assort.jpg?v=7 307w, assets/img/soft-assort-2x.jpg?v=7 614w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="307" height="230" alt="Soft gift packs with stickered wraps">
-        <figcaption class="cap">Soft gift pack<span>Stickered wraps</span></figcaption>
-      </figure>
-      <figure>
-        <img class="photo" src="assets/img/crunchy-jars.jpg?v=7" srcset="assets/img/crunchy-jars.jpg?v=7 465w, assets/img/crunchy-jars-2x.jpg?v=7 930w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="465" height="349" alt="100g crunchy cookie jars with ribbon">
-        <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
-      </figure>
-      <figure>
-        <img class="photo" src="assets/img/crunchy-custom.jpg?v=7" srcset="assets/img/crunchy-custom.jpg?v=7 479w, assets/img/crunchy-custom-2x.jpg?v=7 958w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="479" height="359" alt="Custom pack 200g window boxes">
-        <figcaption class="cap">Custom Pack<span>200g window boxes</span></figcaption>
-      </figure>
-      <figure>
-        <img class="photo" src="assets/img/crunchy-packets.jpg?v=7" srcset="assets/img/crunchy-packets.jpg?v=7 339w, assets/img/crunchy-packets-2x.jpg?v=7 678w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="339" height="254" alt="Packets with custom note">
-        <figcaption class="cap">Packets with custom note<span>20g · mini cookies + note</span></figcaption>
-      </figure>
     </div>
   </div>
 </section>
