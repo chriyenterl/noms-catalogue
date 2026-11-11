@@ -386,6 +386,16 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
   .wrap,.inner-bar{width:min(1560px, calc(100% - 140px))}
   .hero-mascot{width:340px}
 }
+
+/* Desktop: shorter hero, wider nav spacing */
+@media (min-width:640px){
+  .nav{gap:0 32px}
+  .hero{padding:16px 0 20px}
+  .hero .wrap{padding:8px 0 12px}
+  .hero-mascot{width:200px}
+}
+@media (min-width:1200px){ .nav{gap:0 44px} .hero-mascot{width:230px} }
+@media (min-width:1600px){ .hero-mascot{width:250px} }
 </style>
 </head>
 <body>
