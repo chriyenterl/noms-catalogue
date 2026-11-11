@@ -370,6 +370,22 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 .nav a.active::after{transform:scaleX(1)}
 .nav a.active{color:var(--deep)}
 .lead.one-row{white-space:nowrap;max-width:none;font-size:min(1.05rem,3.1vw)}
+
+/* Large screens: widen and scale up */
+@media (min-width:1200px){
+  html{font-size:17px}
+  .wrap,.inner-bar{width:min(1400px, calc(100% - 96px))}
+  .lead{max-width:52rem}
+  .hero-mascot{width:300px}
+  .how-row,.meta-row,.price-row,.moq-cols,.tiers-grid,.partner-grid{gap:18px}
+  .site-footer .wrap{grid-template-columns:auto 1fr auto;align-items:center;gap:40px}
+  .site-footer .wm{height:52px}
+}
+@media (min-width:1600px){
+  html{font-size:18px}
+  .wrap,.inner-bar{width:min(1560px, calc(100% - 140px))}
+  .hero-mascot{width:340px}
+}
 </style>
 </head>
 <body>
