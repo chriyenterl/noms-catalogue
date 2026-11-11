@@ -447,6 +447,9 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 
 /* Section titles on one row (mobile) */
 @media (max-width:639px){ #soft-title,#crunchy-title{white-space:nowrap;font-size:clamp(.9rem, 5.2vw, 1.7rem);letter-spacing:-.5px} }
+
+/* Soft packaging photos: same 4:3 crop as Crunchy */
+.soft-pkg .photo{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
 </style>
 </head>
 <body>
@@ -515,6 +518,16 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <div class="kicker">Soft cookies</div>
     <h2 class="h1" id="soft-title">Soft — Gift packs &amp; Bulk order</h2>
     <p class="lead one-row">Soft cookie of choice, finished with ribbon and a custom sticker.</p>
+    <div class="pkg-grid soft-pkg" style="margin-top:22px">
+      <figure>
+        <img class="photo" src="assets/img/soft-ribbon.jpg?v=7" srcset="assets/img/soft-ribbon.jpg?v=7 382w, assets/img/soft-ribbon-2x.jpg?v=7 764w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="382" height="286" alt="Soft gift packs with ribbon and custom sticker">
+        <figcaption class="cap">Soft gift pack<span>Ribbon + custom sticker</span></figcaption>
+      </figure>
+      <figure>
+        <img class="photo" src="assets/img/soft-assort.jpg?v=7" srcset="assets/img/soft-assort.jpg?v=7 307w, assets/img/soft-assort-2x.jpg?v=7 614w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="307" height="230" alt="Soft gift packs with stickered wraps">
+        <figcaption class="cap">Soft gift pack<span>Stickered wraps</span></figcaption>
+      </figure>
+    </div>
 
     <div class="sec-title" style="margin-top:22px"><span class="bar"></span><h2>Flavours</h2></div>
     <div class="price-row">
