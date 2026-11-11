@@ -396,6 +396,21 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 }
 @media (min-width:1200px){ .nav{gap:0 44px} .hero-mascot{width:230px} }
 @media (min-width:1600px){ .hero-mascot{width:250px} }
+
+/* Hero: title + label as main, mascot as side accent */
+.hero h1{font-size:clamp(2.3rem, 6.4vw, 4.4rem)}
+@media (min-width:640px){
+  .hero .kicker{font-size:.95rem;padding:7px 14px;letter-spacing:.14em}
+  .hero-mascot{width:150px}
+}
+@media (min-width:1200px){ .hero-mascot{width:170px} }
+@media (min-width:1600px){ .hero-mascot{width:180px} }
+@media (max-width:639px){
+  .hero-copy{padding-right:80px}
+  .hero .kicker{font-size:.56rem;padding:4px 7px;margin-right:-80px}
+  .hero-mascot{width:78px;right:-4px}
+  .hero .wrap{min-height:104px}
+}
 </style>
 </head>
 <body>
