@@ -433,6 +433,17 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 /* CTA subline on one row */
 .cta p{white-space:nowrap}
 @media (max-width:639px){ .cta p{font-size:clamp(.62rem, 3.05vw, .92rem);letter-spacing:-.01em} }
+
+/* Footer mascot on the right */
+.site-footer .wrap{grid-template-columns:1fr auto !important;align-items:center;gap:16px}
+.site-footer .ft-left{display:grid;gap:12px;justify-items:start}
+.site-footer .ft-mascot{width:110px;height:auto;justify-self:end}
+@media (min-width:640px){ .site-footer .ft-mascot{width:150px} }
+@media (min-width:1200px){ .site-footer .ft-left{grid-template-columns:auto 1fr;align-items:center;gap:40px} .site-footer .ft-mascot{width:170px} }
+@media (max-width:639px){ .site-footer .ft-mascot{width:96px} .site-footer p{font-size:.8rem} }
+
+.site-footer .ft-mascot{background:#FFF7E8;border-radius:16px;padding:6px}
+@media (max-width:639px){ .site-footer p{font-size:.72rem} .site-footer .wrap{gap:10px} }
 </style>
 </head>
 <body>
@@ -674,9 +685,12 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 
 <footer class="site-footer">
   <div class="wrap">
-    <img class="wm" src="assets/img/noms-logo-white-tagline.png?v=1" alt="Noms">
-    <p>Corporate Giftings · Weddings · Events · Parties<br>
-       Kota Kinabalu, Sabah</p>
+    <div class="ft-left">
+      <img class="wm" src="assets/img/noms-logo-white-tagline.png?v=1" alt="Noms">
+      <p>Corporate Giftings · Weddings · Events · Parties<br>
+         Kota Kinabalu, Sabah</p>
+    </div>
+    <img class="ft-mascot" src="assets/img/hero-memories.png?v=1" alt="Count memories, not calories">
   </div>
 </footer>
 
