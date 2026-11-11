@@ -452,6 +452,10 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 .soft-pkg .photo{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
 
 .crunchy-row2 .photo,.pkg-grid .photo[src*="crunchy-tub"],.pkg-grid .photo[src*="crunchy-box"]{aspect-ratio:4/3;object-fit:cover;width:100%;height:auto}
+.crunchy-row1 .photo{width:100%;height:auto;object-fit:cover}
+.crunchy-row1 figure:first-child .photo{aspect-ratio:4/3}
+.crunchy-row1 figure:last-child .photo{aspect-ratio:8/3}
+@media (min-width:640px){ .pkg-grid.crunchy-row1{grid-template-columns:1fr 2fr} }
 </style>
 </head>
 <body>
@@ -581,18 +585,14 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <h2 class="h1" id="crunchy-title">Crunchy — Retail &amp; bulk</h2>
     <p class="lead">Event and corporate gifting tiers. MOQs differ by weight.</p>
 
-    <div class="pkg-grid equal-3" style="margin-top:22px">
+    <div class="pkg-grid crunchy-row1" style="margin-top:22px">
       <figure>
         <img class="photo" src="assets/img/crunchy-jars.jpg?v=8" srcset="assets/img/crunchy-jars.jpg?v=8 600w, assets/img/crunchy-jars-2x.jpg?v=8 1200w" sizes="(min-width:640px) 533px, calc(100vw - 40px)" width="600" height="450" alt="100g crunchy cookie jars with ribbon">
         <figcaption class="cap">Containers<span>100g jars · ribbon &amp; custom stickers</span></figcaption>
       </figure>
       <figure>
-        <img class="photo" src="assets/img/crunchy-tub.jpg?v=1" width="600" height="450" alt="Round container with ribbon and sticker">
-        <figcaption class="cap">Round container<span>Ribbon &amp; custom sticker</span></figcaption>
-      </figure>
-      <figure>
-        <img class="photo" src="assets/img/crunchy-box.jpg?v=1" width="600" height="450" alt="Square containers with ribbon and thank-you sticker">
-        <figcaption class="cap">Square container<span>Ribbon &amp; custom sticker</span></figcaption>
+        <img class="photo" src="assets/img/crunchy-containers.jpg?v=1" srcset="assets/img/crunchy-containers.jpg?v=1 1200w, assets/img/crunchy-containers-2x.jpg?v=1 2400w" sizes="(min-width:640px) 1066px, calc(100vw - 40px)" width="1200" height="450" alt="Round and square clear containers with white ribbon">
+        <figcaption class="cap">Round &amp; square containers<span>Ribbon &amp; custom sticker or card</span></figcaption>
       </figure>
     </div>
     <div class="pkg-grid crunchy-row2" style="margin-top:16px">
