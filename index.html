@@ -411,6 +411,24 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
   .hero-mascot{width:78px;right:-4px}
   .hero .wrap{min-height:104px}
 }
+
+/* Hero photo background (blurred) */
+.hero{background:#0fb8b0;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-16px;z-index:-2;
+  background:url("assets/img/hero-cookies.jpg?v=1") center 42%/cover no-repeat;
+  filter:blur(4px) saturate(1.05)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(10,60,60,.45) 0%,rgba(10,60,60,.22) 55%,rgba(10,60,60,.08) 100%)}
+.hero h1{text-shadow:0 2px 14px rgba(0,0,0,.35)}
+.hero-copy{padding-right:0 !important}
+.hero .wrap{grid-template-columns:1fr !important}
+@media (min-width:640px){ .hero{padding:44px 0 48px} }
+@media (min-width:1200px){ .hero{padding:60px 0 64px} }
+@media (max-width:639px){
+  .hero{padding:26px 0 26px}
+  .hero .kicker{margin-right:0;font-size:.6rem}
+  .hero .wrap{min-height:120px}
+}
 </style>
 </head>
 <body>
@@ -436,7 +454,6 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
       <div class="kicker">Corporate Giftings · Weddings · Events · Parties</div>
       <h1 class="h1" id="hero-title">Giftings with Noms!</h1>
     </div>
-    <img class="hero-mascot" src="assets/img/hero-memories.png?v=1" alt="">
   </div>
 </section>
 </div>
