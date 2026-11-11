@@ -456,6 +456,11 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
 .crunchy-row1 figure:first-child .photo{aspect-ratio:4/3}
 .crunchy-row1 figure:last-child .photo{aspect-ratio:8/3}
 @media (min-width:640px){ .pkg-grid.crunchy-row1{grid-template-columns:1fr 2fr} }
+.sec-title .note .per{display:inline-block;background:var(--deep);color:#fff;font-family:'Arial Black',sans-serif;font-size:.78rem;letter-spacing:.02em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-right:6px;vertical-align:middle}
+#soft .tier .rm::after,#crunchy .tier .rm::after{font-family:'Proza Libre',sans-serif;font-size:.62em;font-weight:700;color:var(--muted);margin-left:3px}
+#soft .tier .rm::after{content:"/ cookie"}
+#crunchy .tier .rm::after{content:"/ jar"}
+@media (max-width:639px){ .sec-title .note .per{font-size:.68rem;padding:4px 9px} }
 </style>
 </head>
 <body>
@@ -559,7 +564,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <div class="sec-title" style="margin-top:28px">
       <span class="bar"></span>
       <h2>MOQ · from 21 pieces</h2>
-      <span class="note">Price per cookie · bulk order / events</span>
+      <span class="note"><b class="per">Price per cookie</b> bulk order / events</span>
     </div>
     <div class="moq-cols" id="soft-moq-prices">
       <div class="moq-card" data-tier="classic">
@@ -607,7 +612,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <div class="sec-title" style="margin-top:28px">
       <span class="bar"></span>
       <h2>Retail</h2>
-      <span class="note">Price per jar · walk-in / gift</span>
+      <span class="note"><b class="per">Price per jar</b> walk-in / gift</span>
     </div>
     <div class="moq-cols" id="crunchy-retail">
       <div class="moq-card">
@@ -627,7 +632,7 @@ a.btn-wa,a.btn-wa span,a.header-wa,a.header-wa span,a.fab-wa{color:#fff !importa
     <div class="sec-title" style="margin-top:28px">
       <span class="bar"></span>
       <h2>Bulk order</h2>
-      <span class="note">Price per jar · events / corporate</span>
+      <span class="note"><b class="per">Price per jar</b> events / corporate</span>
     </div>
     <div class="bulk-block">
       <h3>Classic</h3>
